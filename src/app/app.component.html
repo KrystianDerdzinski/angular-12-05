@@ -1,8 +1,8 @@
 <h2>hello world</h2>
 
-<app-header></app-header>
+<app-header [userName]="userName" [title]="title"></app-header>
+
+<input type="text" [(ngModel)]="title" />
+<input type="text" [(ngModel)]="userName" />
+
 <app-product-list></app-product-list>
-<!-- wyswietl productListComponent
-  1. Zaimportuj go w app.component
-  2. Umiesc go w HTML przy pomocy selectora
--->
