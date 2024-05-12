@@ -14,4 +14,9 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'angular-wprowadzenie-12-05';
   userName = 'Krystian';
+  productName = '';
+
+  updateCart($event: string) {
+    console.log($event);
+  }
 }

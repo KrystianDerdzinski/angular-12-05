@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-product-list',
@@ -14,4 +14,10 @@ export class ProductListComponent {
   vegetables = ['Cebula', 'Marchew', 'Groszek'];
   prices = [1, 2, 3, 4];
   fontColor = 'red';
+
+  @Output() addedToCart = new EventEmitter();
+
+  addToBasket(itemName: string) {
+    this.addedToCart.emit(itemName);
+  }
 }

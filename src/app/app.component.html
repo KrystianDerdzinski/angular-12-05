@@ -5,4 +5,4 @@
 <input type="text" [(ngModel)]="title" />
 <input type="text" [(ngModel)]="userName" />
 
-<app-product-list></app-product-list>
+<app-product-list (addedToCart)="updateCart($event)"></app-product-list>

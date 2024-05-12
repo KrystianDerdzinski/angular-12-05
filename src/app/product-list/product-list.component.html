@@ -2,13 +2,20 @@
 
 <div *ngFor="let product of products">
   {{ product }}
+  <button (click)="addToBasket(product)">Dodaj do koszyka</button>
 </div>
+
+<hr />
+
+<!-- dodaj button outputujacy event dla tablicy animals -->
+<!-- wyloguj w konsoli w app.component nazwe kliknietego elementu -->
 
 <div *ngFor="let animal of animals">
   {{ animal }}
 </div>
 
 <hr />
+
 <div *ngFor="let veg of vegetables">
   <ng-container *ngIf="!(veg === 'Cebula')">
     {{ veg }}
