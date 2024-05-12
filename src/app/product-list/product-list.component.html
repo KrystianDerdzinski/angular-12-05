@@ -14,3 +14,9 @@
     {{ veg }}
   </ng-container>
 </div>
+
+<ng-container *ngFor="let price of prices">
+  <div *ngIf="price < 3">{{ price }}</div>
+</ng-container>
+
+<div [ngStyle]="{ color: fontColor }">Ten tekst ma byc czerwony!</div>

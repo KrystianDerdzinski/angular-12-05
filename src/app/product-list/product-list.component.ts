@@ -12,4 +12,6 @@ export class ProductListComponent {
   products: string[] = ['Jabłko', 'Gruszka', 'Banan'];
   animals: string[] = ['Pies', 'Kot'];
   vegetables = ['Cebula', 'Marchew', 'Groszek'];
+  prices = [1, 2, 3, 4];
+  fontColor = 'red';
 }
