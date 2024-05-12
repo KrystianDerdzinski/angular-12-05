@@ -1,6 +1,6 @@
 <h2>{{ title }}</h2>
 
-<p>Witaj, {{ userName }}</p>
+<p [ngClass]="{ 'is-logged': isLogged }">Witaj, {{ userName }}</p>
 
 <button *ngIf="!isLogged" (click)="logUser()">Zaloguj się</button>
 <button *ngIf="isLogged" (click)="logoutUser()">Wyloguj się</button>
